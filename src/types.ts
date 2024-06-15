@@ -8,6 +8,7 @@ export interface PersonalInfo {
   email: string;
   picture: string;
   github?: string;
+  blog?: string;
 }
 
 export interface PersonalSkill {

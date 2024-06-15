@@ -15,7 +15,8 @@ export default function Info(props: Props) {
     phoneNumber,
     email,
     picture,
-    github
+    github,
+    blog,
   } = props.info;
 
   return (
@@ -51,6 +52,12 @@ export default function Info(props: Props) {
           <div className="icon-wrapper">
             <img src="/github.svg" alt="GitHub" />
             <a href={`${github}`}>GitHub</a>：{github?.replace('https://', '')}
+          </div>
+        </div>
+        <div className="social-link">
+          <div className="icon-wrapper">
+            <img src="/zeabur.svg" alt="GitHub" />
+            <a href={`${blog}`}>个人网站</a>：{blog?.replace('https://', '')}
           </div>
         </div>
       </div>

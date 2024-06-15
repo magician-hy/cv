@@ -9,6 +9,7 @@ export default {
     email: '2387870957@qq.com',
     picture: '/hanyi.jpg',
     github: 'https://github.com/magician-hy',
+    blog: 'https://portfolio-hy.zeabur.app',
   },
   skills: {
     icons: [
@@ -45,9 +46,9 @@ export default {
       icon: '/fliggy.svg',
       company: '易宝软件科技有限公司（驻场阿里巴巴-飞猪旅行）',
       position: '前端开发工程师',
-      time: '2024 年 05 月 - 2024 年 05 月',
+      time: '2024 年 05 月 - 2024 年 06 月',
       descriptions: [
-        '负责飞猪旅行机票出行中后台迭代开发'
+        '负责飞猪旅行机票出行中后台、小蜜客服等业务迭代开发'
       ],
     },
     {

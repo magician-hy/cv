@@ -10,7 +10,7 @@ export default function Projects(props: Props) {
 
   return (
     <div className="projects page2">
-      <h2>项目经历</h2>
+      <h2>项目经验</h2>
       {projects.map((project, index) => (
         // 根据排版决定是否添加 page2 类名
         <div key={index} className={`project ${index != 0 && index % 2 === 0 ? 'page2' : ''}`}>

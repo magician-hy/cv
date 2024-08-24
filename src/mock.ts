@@ -4,18 +4,16 @@ export default {
     gender: '男',
     age: 26,
     position: '前端开发工程师',
-    workingYears: 1,
+    workingYears: 3,
     phoneNumber: '15679112682',
     email: '2387870957@qq.com',
     picture: '/hanyi.jpg',
     github: 'https://github.com/magician-hy',
-    blog: 'https://portfolio-hy.zeabur.app',
   },
   skills: {
     icons: [
       '/javascript.svg',
       '/typescript.svg',
-      '/vue.svg',
       '/react.svg',
       '/redux.svg',
       '/react-router.svg',
@@ -32,10 +30,11 @@ export default {
     ],
     descriptions: [
       '熟悉 JavaScript 常用语法，日常开发使用 TypeScript 提高代码可靠性和可维护性',
-      '熟悉 React、Vue 技术栈和相关生态，包含路由、状态管理库和各类工具库',
+      '熟悉 React 技术栈和相关生态，包含路由、状态管理库和各类工具库',
       '熟悉主流组件库，例如 Ant Design、Ant Design Mobile 使用及二次封装',
-      '熟悉网络，例如 fetch 和 Axios 使用及二次封装，了解 Node.js',
-      '了解工程化，例如 Vite 和 Webpack 使用及配置，了解模块化和包管理器',
+      '了解网络，例如 fetch 和 Axios 使用及二次封装',
+      '了解工程化，例如 Vite 和 Webpack 使用及配置',
+      '了解 Node.js ，例如 Express 使用及配置',
       '具备代码质量意识，采用规范、重构、Code Review 等方式进行优化',
       '具备良好英语水平，拥有六级证书，能够查阅官方文档，并在开发中规范命名',
     ],
@@ -46,9 +45,9 @@ export default {
       icon: '/fliggy.svg',
       company: '易宝软件科技有限公司（驻场阿里巴巴-飞猪旅行）',
       position: '前端开发工程师',
-      time: '2024 年 05 月 - 2024 年 06 月',
+      time: '2024 年 05 月 - 2024 年 09 月',
       descriptions: [
-        '负责飞猪旅行机票出行中后台、小蜜客服等业务迭代开发'
+        '负责飞猪旅行机票出行中后台、支付中后台、小蜜客服模板等业务迭代开发',
       ],
     },
     {
@@ -67,7 +66,7 @@ export default {
       icon: '/wuitu.svg',
       company: '辉途智能科技有限公司',
       position: '前端开发工程师',
-      time: '2023 年 03 月 - 2023 年 07 月',
+      time: '2021 年 03 月 - 2023 年 07 月',
       descriptions: [
         '负责牛轻松牧场管理系统 WEB 和 APP，以及内部运营配置平台迭代开发',
         '基于 Node-Red 并结合业务场景，模拟牛舍内网关、操作设备和传感器工作流程，提高测试效率',
@@ -86,6 +85,48 @@ export default {
     },
   ],
   projects: [
+    {
+      type: 'close',
+      icon: '/react.svg',
+      name: '飞猪机票出行中后台',
+      description:
+        '包含出行服务各项配置能力，致力于优化机票经营流程、提升运营研发服务体验，并为日常经营活动提供一站式解决方案',
+      stack: [
+        'React',
+        'Ant Design',
+        'Umi',
+        'Midway',
+        'ahooks',
+      ],
+      details: [
+        '负责应急取数、排查工具、航司规则等功能模块开发',
+        '封装业务组件，例如基于 React-Diff-Viewer 和 Drawer 的 JSON diff 组件',
+        '封装工具函数，例如 File 转 base64、文件下载通用函数（使用者无需关心下载资源是否会跨域，函数内会抹平）',
+        '封装自定义 hook，例如基于 useRequest 的获取表格数据、联动表单的 useTable',
+        '解决将该后台迁移至机票经营后台（微前端架构）作为子应用时的各类问题，例如主应用 antd 版本为 4，为避免样式冲突需将基于 antd 5 特有的功能进行修改适配',
+      ],
+    },
+    {
+      type: 'close',
+      icon: '/alipay.svg',
+      name: '北京环球度假小程序',
+      description:
+        '包含北京环球度假区票务、酒店预定、园区地图、会员商城、活动资讯等功能，为游客提供一站式服务',
+      stack: [
+        '支付宝小程序开发框架',
+        'Ant Design Mini',
+        'Mini Ali UI',
+        'Alife Logger',
+      ],
+      details: [
+        '负责优速通、快速入园卡等票务正向与逆向交易链路',
+        '封装业务组件，例如 sku 时间段、场次选择弹窗组件，包含列表自动排序、购买数量和超时校验、和置灰禁用等功能',
+        '封装工具函数，例如针对特定数据结构，生成对应内容弹窗所需展示状态和富文本',
+        '封装各模块数据清洗函数，包含接口异常兜底和数据重组',
+        '重构部分模块，例如票型详情页面代码拆分，减少耦合、游客选择组件按照 sku 纬度分组展示等',
+        '优化用户体验，例如日历折叠面板与底部滚动容器结合，可能无法正常滚动，通过修改触发区域解决',
+      ],
+    },
     {
       type: 'close',
       icon: '/react.svg',
@@ -149,7 +190,7 @@ export default {
     {
       type: 'close',
       icon: '/vue.svg',
-      name: '牛轻松',
+      name: '牛轻松 WEB',
       description:
         '一款涉及牧场、牛舍、人员、设备的奶牛养殖管理系统，该项目可在线监控牧场、牛舍各项数据指标，及时通知告警相关人员，并能根据需要控制各类智能硬件',
       stack: [

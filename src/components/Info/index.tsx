@@ -48,18 +48,22 @@ export default function Info(props: Props) {
             </a>
           </div>
         </div>
-        <div className="social-link">
-          <div className="icon-wrapper">
-            <img src="/github.svg" alt="GitHub" />
-            <a href={`${github}`}>GitHub</a>：{github?.replace('https://', '')}
+        {github && (
+          <div className="social-link">
+            <div className="icon-wrapper">
+              <img src="/github.svg" alt="GitHub" />
+              <a href={`${github}`}>GitHub</a>：{github?.replace('https://', '')}
+            </div>
           </div>
-        </div>
-        <div className="social-link">
-          <div className="icon-wrapper">
-            <img src="/zeabur.svg" alt="GitHub" />
-            <a href={`${blog}`}>个人网站</a>：{blog?.replace('https://', '')}
+        )}
+        {blog && (
+          <div className="social-link">
+            <div className="icon-wrapper">
+              <img src="/zeabur.svg" alt="GitHub" />
+              <a href={`${blog}`}>个人网站</a>：{blog?.replace('https://', '')}
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div>
         <img src={picture} alt="照片" width="100" />
